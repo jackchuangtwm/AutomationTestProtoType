@@ -13,7 +13,7 @@ import logging
 
 def test_about_us(set_driver):
     
-    page_obj = IndexPage(set_driver.driver)
+    page_obj = IndexPage(set_driver)
     page_obj.driver.get(f'{os.getenv("DOMAIN")}')
     page_obj.click_about_us()
     title = page_obj.get_about_us_title()

@@ -3,7 +3,6 @@ import pymysql
 from dotenv import load_dotenv
 import os
 from selenium.webdriver.firefox.options import Options
-from selenium.webdriver.firefox.service import Service
 from selenium import webdriver
 import allure
 from allure_commons.types import AttachmentType

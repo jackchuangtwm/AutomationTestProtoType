@@ -530,3 +530,88 @@ DevTools listening on ws://127.0.0.1:63846/devtools/browser/64db7861-40b2-4b18-b
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://parabank.parasoft.com."
 1696903893665	Marionette	INFO	Stopped listening on port 63854
 Dynamically enable window occlusion 1
+1696918699602	geckodriver	INFO	Listening on 127.0.0.1:57732
+1696918702659	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57733" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\GEORGE~1\\AppData\\Local\\Temp\\rust_mozprofileOtvRWt"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696918702994	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1696918703061	Marionette	INFO	Listening on port 57744
+WebDriver BiDi listening on ws://127.0.0.1:57733
+Read port: 57744
+1696918703254	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:57733/devtools/browser/2a5f7cc4-0757-4ada-bf46-9883b59c8429
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://parabank.parasoft.com."
+1696918710789	Marionette	INFO	Stopped listening on port 57744
+Dynamically enable window occlusion 1
+1696919748948	geckodriver	INFO	Listening on 127.0.0.1:58361
+1696919752015	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58362" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\GEORGE~1\\AppData\\Local\\Temp\\rust_mozprofileiIKB6K"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696919752337	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1696919752402	Marionette	INFO	Listening on port 58370
+WebDriver BiDi listening on ws://127.0.0.1:58362
+Read port: 58370
+1696919752593	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58362/devtools/browser/a2671879-afd8-41a6-96dc-84f90613b617
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://parabank.parasoft.com."
+1696919758240	Marionette	INFO	Stopped listening on port 58370
+Dynamically enable window occlusion 1
+1696919873698	geckodriver	INFO	Listening on 127.0.0.1:58513
+1696919876760	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58514" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\GEORGE~1\\AppData\\Local\\Temp\\rust_mozprofileGbMRj4"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696919877078	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1696919877144	Marionette	INFO	Listening on port 58522
+WebDriver BiDi listening on ws://127.0.0.1:58514
+Read port: 58522
+1696919877328	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58514/devtools/browser/86a89c1e-1444-426d-bfef-c349a2c465ab
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://parabank.parasoft.com."
+1696919882557	Marionette	INFO	Stopped listening on port 58522
+Dynamically enable window occlusion 1
+1696920040068	geckodriver	INFO	Listening on 127.0.0.1:58767
+1696920123547	geckodriver	INFO	Listening on 127.0.0.1:58821
+1696920126590	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58822" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\GEORGE~1\\AppData\\Local\\Temp\\rust_mozprofileIiDxOo"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696920126921	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1696920126986	Marionette	INFO	Listening on port 58831
+WebDriver BiDi listening on ws://127.0.0.1:58822
+Read port: 58831
+1696920127176	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58822/devtools/browser/c9ae80e1-7f38-40e8-a7a8-52c5bebffb4d
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://parabank.parasoft.com."
+1696920131527	Marionette	INFO	Stopped listening on port 58831
+Dynamically enable window occlusion 1
+1696920227975	geckodriver	INFO	Listening on 127.0.0.1:58946
+1696920231019	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58947" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\GEORGE~1\\AppData\\Local\\Temp\\rust_mozprofileooyDuN"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696920231339	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1696920231406	Marionette	INFO	Listening on port 58956
+WebDriver BiDi listening on ws://127.0.0.1:58947
+Read port: 58956
+1696920231599	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58947/devtools/browser/954f1c70-eac3-4802-a38e-71d1df0eb909
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://parabank.parasoft.com."
+1696920237353	Marionette	INFO	Stopped listening on port 58956
+Dynamically enable window occlusion 1
+1696920483119	geckodriver	INFO	Listening on 127.0.0.1:59156
+1696920486180	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59157" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\GEORGE~1\\AppData\\Local\\Temp\\rust_mozprofileKUQZcx"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696920486502	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1696920486569	Marionette	INFO	Listening on port 59166
+WebDriver BiDi listening on ws://127.0.0.1:59157
+Read port: 59166
+1696920486755	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:59157/devtools/browser/bb39c8da-0ab8-427c-8111-397666068884
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://parabank.parasoft.com."
+1696920491908	Marionette	INFO	Stopped listening on port 59166
+Dynamically enable window occlusion 1

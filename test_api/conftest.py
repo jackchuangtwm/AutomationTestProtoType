@@ -3,6 +3,7 @@ from dotenv import load_dotenv
 import os
 import requests
 import logging
+from test_data.get_data_from_excel import ExcelSheetOperator
 
 if 'ENV_FILE' in os.environ:
     env_file = os.environ['ENV_FILE']
@@ -10,6 +11,8 @@ if 'ENV_FILE' in os.environ:
 else:
     load_dotenv()
 
+excel_reader = ExcelSheetOperator(file_name='test_data/test_data.xlsx', sheet_name='Login_info_data')
+login_info_dict_list = excel_reader.to_dict_list()
 
 @pytest.fixture()
 def create_session():
@@ -19,32 +22,17 @@ def create_session():
 
 
 @pytest.fixture()
-def login_api(create_session, request, worker_id):
+def login_api(create_session, worker_id):
     session = create_session
 
-    if hasattr(request, 'param'):
-        logging.info('Login with request param from test case')
-        email, password = request.param
+    logging.info(f'worker_id : {worker_id}')
 
-    else:
-        logging.info('Login with auto assigned credential')
-        worker_id_num_part = str(int(worker_id.split("w")[1])+1)
-        email, password = (
-            os.getenv(f'MEMBER_EMAIL_{worker_id_num_part}'), 
-            os.getenv(f'MEMBER_PASSWORD_{worker_id_num_part}')
-            )
+    account, password, return_code = (
+        login_info_dict_list[int(worker_id.split("w")[1])]['Account'],
+        login_info_dict_list[int(worker_id.split("w")[1])]['Password'],
+        login_info_dict_list[int(worker_id.split("w")[1])]['Return code'],
+    )
+    login_response = session.get(url=f'{os.getenv("API_DOMAIN")}/{account}/{password}')
     
-    login_request = {
-                "provider": "native",
-                "email": f"{email}",
-                "password": f"{password}"
-                }
-    
-    logging.info(f'Sending login request...\nLogin request = {str(login_request)}')
-    login_response = session.post(url=f'{os.getenv("API_DOMAIN")}/user/login',data=login_request)
-    
-    if login_response.status_code == 200:
-        session.headers = {"Authorization": f'Bearer {login_response.json()["data"]["access_token"]}'}
-        
-    logging.info(f'Login response = {str(login_response)}')
-    yield session, login_response, login_request
+    assert int(login_response.status_code) == int(return_code), f'Expected login response code : {return_code}, got : {login_response.status_code}'
+    yield

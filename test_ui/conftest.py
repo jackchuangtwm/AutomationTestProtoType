@@ -18,7 +18,7 @@ else:
 def set_driver():
 
     firefox_options = Options()
-    # firefox_options.add_argument("--headless")
+    firefox_options.add_argument("--headless")
     driver = webdriver.Firefox(options=firefox_options)
     driver.set_window_size(2560, 1440)
     yield driver
